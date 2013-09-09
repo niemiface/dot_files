@@ -14,6 +14,10 @@ export CC=/opt/local/bin/gcc-apple-4.2
 #export JAVA_HOME=/usr/local/java
 #export PATH=$JAVA_HOME/bin:$RUBY_HOME/bin:$PATH
 
-if [-f ~/.bash_aliases ]; then
+if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
+fi
+
+if [ -f ~/.bashrc ]; then
+source ~/.bashrc
 fi
